@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Videograph Template">
+    <meta name="keywords" content="Videograph, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Videograph | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav__option">
+                        <nav class="header__nav__menu mobile-menu">
+                            <ul>
+                               <li><a href="./index.html">Home</a></li>
+                               <li><a href="./about.html">About</a></li>
+                               <li><a href="./portfolio.html">Portfolio</a></li>
+                               <li class="active"><a href="./services.html">Services</a></li>
+                               <li><a href="./blog.html">Blog</a></li>
+                               <li><a href="./contact.html">Contact</a></li>
+                               </ul>
+                        </nav>
+                        <div class="header__nav__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option spad set-bg" data-setbg="img/breadcrumb-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Contact us</h2>
+                        <div class="breadcrumb__links">
+                            <a href="#">Home</a>
+                            <span>Contact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Contact Widget Section Begin -->
+    <section class="contact-widget spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Address</h4>
+                            <p>319/1 ,Hawanawaththa,Dambulla Road,Kurunegala</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Hotline</h4>
+                            <p>+94-76-007-3341</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-md-6 col-md-3">
+                    <div class="contact__widget__item">
+                        <div class="contact__widget__item__icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="contact__widget__item__text">
+                            <h4>Email</h4>
+                            <p>sach99kumarathunga@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Widget Section End -->
+<section class="contact spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6">
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18..." height="450" style="border:0;"></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <div class="contact__form">
+                    <h3>Get in touch</h3>
+                    <form id="contactForm">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="text" id="contact_number" placeholder="Contact Number" required>
+                        <textarea id="message" placeholder="Message" required></textarea>
+                       <button type="button" onclick="sendEmail()" class="site-btn">Send Message</button>
+
+                    </form>
+                    <p id="form-status"></p> <!-- Status message will display here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.2.0/dist/email.min.js"></script>
+
+ <!-- Initialize EmailJS -->
+ <script type="text/javascript">
+     (function () {
+         emailjs.init("302zykhe832BFeYqm"); // Replace with your actual public key
+     })();
+ </script>
+
+ <!-- Custom JavaScript for Sending Email -->
+ <script type="text/javascript">
+     function sendEmail() {
+         const name = document.getElementById('name').value;
+         const email = document.getElementById('email').value;
+         const contact_number = document.getElementById('contact_number').value;
+         const message = document.getElementById('message').value;
+
+         const templateParams = {
+             to_name: "Recipient Name",
+             from_name: name,
+             message: message,
+             contact_number: contact_number,
+             reply_to: email,
+         };
+
+         emailjs.send("service_xjqrh84", "template_76p2flr", templateParams)
+             .then(response => {
+                 document.getElementById("form-status").innerText = "Message sent successfully!";
+                 document.getElementById("contactForm").reset();
+             }, error => {
+                 document.getElementById("form-status").innerText = "Failed to send message. Please try again.";
+                 console.error("EmailJS error:", error);
+             });
+     }
+ </script>
+
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__logo">
+                            <a href="#"><img src="img/logo.png" alt="Logo"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__top__social">
+                            <a href="https://www.linkedin.com/in/sachini-kumarathunga"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://github.com/sachkumarathunga"><i class="fa fa-github"></i></a>
+                            <a href="mailto:sach99kumarathunga@gmail.com"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer__option__item">
+                            <h5>About Me</h5>
+                            <p>I am a web developer and designer specializing in creating dynamic, responsive websites
+                                and engaging user experiences.</p>
+                            <a href="#about" class="read__more">Learn more <span class="arrow_right"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Quick Links</h5>
+                            <ul>
+                                <li><a href="#portfolio">Portfolio</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-3">
+                        <div class="footer__option__item">
+                            <h5>Projects</h5>
+                            <ul>
+                                <li><a href="#project1">Project 1</a></li>
+                                <li><a href="#project2">Project 2</a></li>
+                                <li><a href="#project3">Project 3</a></li>
+                                <li><a href="#project4">Project 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <div class="footer__option__item">
+                            <h5>Newsletter</h5>
+                            <p>Stay updated with the latest in web development and design insights.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Email">
+                                <button type="submit"><i class="fa fa-send"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer__copyright__text">&copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | Designed by <a href="https://yourwebsite.com"
+                                target="_blank">Your Name</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+    </body>
+
+    </html>
