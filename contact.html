@@ -207,85 +207,117 @@
 
 
 
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__logo">
-                            <a href="#"><img src="img/logo.png" alt="Logo"></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="https://www.linkedin.com/in/sachini-kumarathunga"><i
-                                    class="fa fa-linkedin"></i></a>
-                            <a href="https://github.com/sachkumarathunga"><i class="fa fa-github"></i></a>
-                            <a href="mailto:sach99kumarathunga@gmail.com"><i class="fa fa-envelope"></i></a>
-                        </div>
+<!-- Footer Section Begin -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__top__logo">
+                        <a href="#"><img src="img/logo.png" alt="Logo"></a>
                     </div>
                 </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About Me</h5>
-                            <p>I am a web developer and designer specializing in creating dynamic, responsive websites
-                                and engaging user experiences.</p>
-                            <a href="#about" class="read__more">Learn more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Quick Links</h5>
-                            <ul>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#services">Services</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Projects</h5>
-                            <ul>
-                                <li><a href="#project1">Project 1</a></li>
-                                <li><a href="#project2">Project 2</a></li>
-                                <li><a href="#project3">Project 3</a></li>
-                                <li><a href="#project4">Project 4</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Newsletter</h5>
-                            <p>Stay updated with the latest in web development and design insights.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <p class="footer__copyright__text">&copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script> All rights reserved | Designed by <a href="https://yourwebsite.com"
-                                target="_blank">Your Name</a>
-                        </p>
+                <div class="col-lg-6 col-md-6">
+                    <div class="footer__top__social">
+                        <a href="https://www.linkedin.com/in/sachini-kumarathunga"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/sachkumarathunga"><i class="fa fa-github"></i></a>
+                        <a href="mailto:sach99kumarathunga@gmail.com"><i class="fa fa-envelope"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Footer Section End -->
+        <div class="footer__option">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__option__item">
+                        <h5>About Pearl White Wave</h5>
+                        <p>Pearl White Wave is dedicated to delivering high-quality, tailored solutions in web
+                            development, software development, and dashboard analytics.</p>
+                        <a href="#about" class="read__more">Learn more <span class="arrow_right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3">
+                    <div class="footer__option__item">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="#services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-3">
+                    <div class="footer__option__item">
+                        <h5>Projects</h5>
+                        <ul>
+                            <li><a href="https://www.measureinteriors.com/">Project 1</a></li>
+                            <li><a href="https://kottoor.com/">Project 2</a></li>
+                            <li><a href="https://measurelubes.com/">Project 3</a></li>
+                            <li><a href="https://breastguard.netlify.app/">Project 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__option__item">
+                        <h5>Newsletter</h5>
+                        <p>Stay updated with the latest in web development and design insights.</p>
+                        <form id="newsletterForm">
+                            <input type="email" id="userEmail" placeholder="Email" required>
+                            <button type="submit"><i class="fa fa-send"></i></button>
+                        </form>
+                        <p id="newsletterMessage" style="display:none; color:green;">Thank you for subscribing!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="footer__copyright__text">&copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | Designed by <a
+                            href="https://sachkumarathunga.github.io/pearl-white-wave-portfolio/index.html"
+                            target="_blank">Pearl White Wave Web Develepment</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Include EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+<script type="text/javascript">
+    // Initialize EmailJS with your public key
+    (function () {
+        emailjs.init("302zykhe832BFeYqm"); // Replace with your EmailJS public key
+    })();
+
+    // Handle newsletter form submission
+    document.getElementById('newsletterForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form from reloading the page
+
+        const userEmail = document.getElementById('userEmail').value;
+
+        // Send the email data to EmailJS
+        emailjs.send("service_xiqrh84", "template_ud9i6w8", {
+                user_email: userEmail // Match with the variable in your EmailJS template
+            })
+            .then(function (response) {
+                console.log("SUCCESS!", response.status, response.text);
+                document.getElementById('newsletterMessage').style.display = 'block';
+            }, function (error) {
+                console.log("FAILED...", error);
+            });
+    });
+</script>
+
 
 
     <!-- Js Plugins -->
