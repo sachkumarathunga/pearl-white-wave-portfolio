@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Sach-portfolio</title>
+    <title><sach-portfolio></sach-portfolio></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -50,8 +50,8 @@
 		      </a>
 		    </li>
 		    <li>
-		      <a data-scroll="portfolio" href="#portfolio" class="dot">
-		        <span>Projects</span>
+		      <a data-scroll="work" href="#work" class="dot">
+		        <span>Gallery</span>
 		      </a>
 		    </li>
 		    <li>
@@ -500,11 +500,51 @@ animation: blink 1.5s infinite alternate;
 					<div class="project-overlay">
 						<h3>Sahasra Horizons</h3>
 						<p> Holistic wellness and astrological insights / HTML, CSS, JavaScript</p>
-						<a href="https://sachkumarathunga.github.io/Sahasra-Horizons/" target="_blank" class="project-link"><span
+						<a href="https://sachkumarathunga.github.io/Sahasra-Horizons/" target="_blank"
+							class="project-link"><span class="icon-expand"></span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 portfolio-item ftco-animate" data-category="web-development">
+				<div class="project-card">
+					<img src="images/project.jpg" alt="Curly Crown Salon" class="img-fluid">
+					<div class="project-overlay">
+						<h3>Italia Kanko Travel</h3>
+						<p> Italia Kanko redefines transportation in Sri Lanka. / HTML, CSS, JavaScript</p>
+						<a href="https://pearlwhitewaveweb.github.io/ITALIA-KANKO/" target="_blank" class="project-link"><span
 								class="icon-expand"></span></a>
 					</div>
 				</div>
 			</div>
+
+			<div class="col-md-4 portfolio-item ftco-animate" data-category="web-development">
+				<div class="project-card">
+					<img src="images/project.jpg" alt="Curly Crown Salon" class="img-fluid">
+					<div class="project-overlay">
+						<h3>Italia Kanko Travel</h3>
+						<p> Italia Kanko redefines transportation in Sri Lanka. / HTML, CSS, JavaScript</p>
+						<a href="https://pearlwhitewaveweb.github.io/ITALIA-KANKO/" target="_blank" class="project-link"><span
+								class="icon-expand"></span></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 portfolio-item ftco-animate" data-category="web-development">
+				<div class="project-card">
+					<img src="images/project.jpg" alt="Curly Crown Salon" class="img-fluid">
+					<div class="project-overlay">
+						<h3>Khettarama  Foundation</h3>
+						<p> Discover the essence of history, culture, and spirituality with Khettarama Foundation / HTML, CSS, JavaScript
+						</p>
+						<a href="https://pearlwhitewaveweb.github.io/Khettarama-Foundation/index.html" target="_blank"
+							class="project-link"><span
+								class="icon-expand"></span></a>
+					</div>
+				</div>
+			</div>
+
+
 
 
 			<!-- Add other Web Development items (excluding 3_x and 4_x images) here -->
@@ -1018,7 +1058,6 @@ animation: blink 1.5s infinite alternate;
 							how I can help bring your vision to life.</p>
 					</div>
 				</div>
-
 				<div class="row mb-5">
 					<div class="col-md-3 d-flex ftco-animate">
 						<div class="align-self-stretch box text-center p-4">
@@ -1027,8 +1066,7 @@ animation: blink 1.5s infinite alternate;
 							</div>
 							<div>
 								<h3 class="mb-4">Portfolio Website</h3>
-								<p><a href="https://sachkumarathunga.github.io/pearl-white-wave-portfolio/"
-										target="_blank">sachinikumarathunga.com</a></p>
+								<p><a href="https://sachinikumarathunga.com" target="_blank">sachinikumarathunga.com</a></p>
 							</div>
 						</div>
 					</div>
@@ -1068,21 +1106,12 @@ animation: blink 1.5s infinite alternate;
 					</div>
 				</div>
 
+				
 				<div class="row block-9">
-					<!-- Profile Image on the Left -->
-					<div class="col-md-6 ftco-animate">
-						<div class="profile-image-container text-center mb-4">
-							<img src="images/SACH.png" alt="Sachini Kumarathunga" class="img-fluid rounded-circle"
-								style="width: 250px; height: auto;">
-							<p class="mt-3">Sachini Kumarathunga - Web Developer</p>
-						</div>
-					</div>
-
-					<!-- Contact Form on the Right -->
 					<div class="col-md-6 ftco-animate">
 						<div class="contact__form">
-							<h3>Get in touch</h3>
-							<form id="contactForm" class="p-4 p-md-5 py-md-5">
+							<h3 style="margin-left: 6CM;">Get in touch</h3>
+							<form id="contactForm" class="p-4 p-md-5 py-md-5" style="max-width: 30CM;"> 
 								<div class="form-group">
 									<input type="text" id="name" class="form-control" placeholder="Your Name" required>
 								</div>
@@ -1106,57 +1135,65 @@ animation: blink 1.5s infinite alternate;
 						</div>
 					</div>
 				</div>
+
+				<!-- Load EmailJS Library -->
+				<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"
+					onerror="this.onerror=null; this.src='js/email.min.js'"></script>
+
+				<script type="text/javascript">
+					document.addEventListener("DOMContentLoaded", function () {
+						if (typeof emailjs !== "undefined") {
+							emailjs.init("302zykhe832BFeYqm"); // Replace with your actual public key
+						} else {
+							console.error("EmailJS library did not load correctly.");
+						}
+					});
+				</script>
+
+				<!-- Custom JavaScript for Sending Email -->
+				<script type="text/javascript">
+					function sendEmail() {
+						if (typeof emailjs === "undefined") {
+							console.error("EmailJS is not defined.");
+							document.getElementById("form-status").innerText = "Failed to load email service.";
+							return;
+						}
+
+						const name = document.getElementById('name').value;
+						const email = document.getElementById('email').value;
+						const contact_number = document.getElementById('contact_number').value;
+						const message = document.getElementById('message').value;
+
+						const templateParams = {
+							to_name: "Recipient Name", // Change to actual recipient if applicable
+							from_name: name,
+							from_email: email,
+							message: message,
+							contact_number: contact_number
+						};
+
+						emailjs.send("service_xiqrh84", "template_76p2flr", templateParams)
+							.then(response => {
+								document.getElementById("form-status").innerText = "Message sent successfully!";
+								document.getElementById("contactForm").reset();
+							}, error => {
+								document.getElementById("form-status").innerText = "Failed to send message. Please try again.";
+								console.error("EmailJS error:", error);
+							});
+					}
+				</script>
+
+
+					<div class="col-md-6 d-flex align-items-stretch">
+						<div id="map">
+							<!-- You can embed Google Maps iframe here if you want to show your location on the map -->
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<!-- Load EmailJS Library -->
-		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"
-			onerror="this.onerror=null; this.src='js/email.min.js'"></script>
-
-		<script type="text/javascript">
-			document.addEventListener("DOMContentLoaded", function () {
-				if (typeof emailjs !== "undefined") {
-					emailjs.init("302zykhe832BFeYqm"); // Replace with your actual public key
-				} else {
-					console.error("EmailJS library did not load correctly.");
-				}
-			});
-		</script>
-
-		<!-- Custom JavaScript for Sending Email -->
-		<script type="text/javascript">
-			function sendEmail() {
-				if (typeof emailjs === "undefined") {
-					console.error("EmailJS is not defined.");
-					document.getElementById("form-status").innerText = "Failed to load email service.";
-					return;
-				}
-
-				const name = document.getElementById('name').value;
-				const email = document.getElementById('email').value;
-				const contact_number = document.getElementById('contact_number').value;
-				const message = document.getElementById('message').value;
-
-				const templateParams = {
-					to_name: "Recipient Name", // Change to actual recipient if applicable
-					from_name: name,
-					from_email: email,
-					message: message,
-					contact_number: contact_number
-				};
-
-				emailjs.send("service_xiqrh84", "template_76p2flr", templateParams)
-					.then(response => {
-						document.getElementById("form-status").innerText = "Message sent successfully!";
-						document.getElementById("contactForm").reset();
-					}, error => {
-						document.getElementById("form-status").innerText = "Failed to send message. Please try again.";
-						console.error("EmailJS error:", error);
-					});
-			}
-		</script>
 		<!-- End Contact Section -->
-
 
 
 	<!-- Start Footer Section -->
